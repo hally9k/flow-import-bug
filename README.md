@@ -4,7 +4,7 @@ This repo is to demonstrate how importing types into a file that is declaring ty
 
 We have 2 files containing types:  
 - `base.js.flow` contains a single type, `Person`. The `Person` type is exported.  
-- `football.js.flow` imports `Person` and contains a single type, `Team` which has an array of type `Person`. The `Team` type is declared globally. 
+- `football.js.flow` imports `Person` and contains a single type, `Team` which has an array of type `Person` called players. The `Team` type is declared globally. 
 
 The `.flowconfig` file simply references `football.js.flow` under `[lib]`.
 

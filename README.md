@@ -1,4 +1,4 @@
-## Import bug in Flow
+## Import bug in Flow 0.65.0
 
 This repo is to demonstrate how importing types into a file that is declaring types as a flow lib breaks type-checking for those imported types and fails silently.
 

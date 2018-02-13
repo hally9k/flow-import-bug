@@ -2,8 +2,8 @@
 
 This repo is to demonstrate how importing types into a file that is declaring types as a flow lib breaks type-checking for those imported types and fails silently.
 
-We have 2 files containing types:
-`base.js.flow` contains a single type, `Person`. The `Person` type is exported.
+We have 2 files containing types:  
+`base.js.flow` contains a single type, `Person`. The `Person` type is exported.  
 `football.js.flow` imports `Person` and contains a single type, `Team` which has an array of type `Person`. The `Team` type is declared globally. 
 
 The `.flowconfig` file simply references `football.js.flow` under `[lib]`.

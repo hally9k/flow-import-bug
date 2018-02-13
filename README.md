@@ -8,7 +8,9 @@ We have 2 files containing types:
 
 The `.flowconfig` file simply references `football.js.flow` under `[lib]`.
 
-See `index.js`. This file simply instiantiates a `Team` and a player. Note that the player is of type `Person` and doesn't have the required name property. Flow correctly flags this up and fails the type check. 
+👌 All is well it seems...
+
+Now see `index.js`. This file simply instiantiates a `Team` and a player. Note that the player is of type `Person` and doesn't have the required name property. Flow correctly flags this up and fails the type check. 
 
 Run `flow` to see the correct errors informing you that a `Person` indeed has to have a name property. (Oh and run `npm i` if you haven't yet...)
 

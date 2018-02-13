@@ -1,0 +1,7 @@
+// @flow
+
+import { Person } from './base.js.flow'
+
+declare type Team = {
+    players: Array<Person>
+}

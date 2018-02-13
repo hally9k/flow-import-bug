@@ -1,0 +1,14 @@
+{
+  "name": "flow-import-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "type-check": "flow"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flow-bin": "^0.65.0"
+  }
+}

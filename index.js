@@ -6,9 +6,9 @@
 import { type Person } from './base.js.flow'
 
 const alexis: Person = {
-    randomKeyInsteadOfName: 'Alexis Sanchez'
+	randomKeyInsteadOfName: 'Alexis Sanchez'
 }
 
 const ManchesterUnited: Team = {
-    players: [alexis]
+	players: [alexis]
 }

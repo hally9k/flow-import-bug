@@ -1,4 +1,4 @@
-## Import bug in Flow 0.65.0 🐛
+## Import bug in Flow 0.66.0 🐛
 
 This repo is to demonstrate how importing types into a file that is declaring types as a flow lib breaks type-checking for those imported types and fails silently.
 
@@ -6,13 +6,13 @@ You will need to run `npm i` to follow this walk through.
 
 We have 2 files containing types:  
 - `base.js.flow` contains a single type, `Person`. The `Person` type is exported.  
-- `football.js.flow` imports `Person` and contains a single type, `Team` which has an array of type `Person` called players. The `Team` type is declared globally. 
+- `football.js.flow` imports `Person` and contains a single type, `Team` which has an array of type `Person` called players. The `Team` type is declared globally.
 
 The `.flowconfig` file simply references `football.js.flow` under `[lib]`.
 
 👌 All is well it seems...
 
-Now see `index.js`. This file simply instiantiates a `Team` and a player. Note that the player is of type `Person` and doesn't have the required name property. Flow correctly flags this up and fails the type check. 
+Now see `index.js`. This file simply instiantiates a `Team` and a player. Note that the player is of type `Person` and doesn't have the required name property. Flow correctly flags this up and fails the type check.
 
 Run `flow` to see the correct errors informing you that a `Person` must have a name property.
 

@@ -10,5 +10,5 @@ const alexis: Person = {
 }
 
 const ManchesterUnited: Team = {
-    players: [alexis, lukaku]
+    players: [alexis]
 }
